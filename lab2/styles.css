@@ -1,0 +1,68 @@
+body {
+  background-color: #eeeeee;
+  margin: 0;
+}
+
+header {
+  background-color: green;
+  text-align: center;
+  padding: 20px;
+}
+
+nav {
+  background-color: black;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 10px;
+}
+
+main {
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.fotografias {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.fotografias img {
+  width: 150px;
+  border-radius: 20px;
+}
+
+.poema p:nth-child(2n+1) {
+  color: green;
+}
+
+.poema p:nth-child(2n) {
+  color: blue;
+}
+
+th {
+  color: blue;
+}
+
+td {
+  color: green;
+}
+
+header + img {
+  width: 600px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
