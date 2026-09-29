@@ -1,0 +1,75 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial;
+}
+section {
+  height: 100vh;
+  padding: 40px;
+}
+#inicio {
+  background-image: url("images/foto1.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  color: black;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
+#inicio h1 {
+  font-size: 50px;
+  margin-top: 200px;
+}
+#inicio p {
+  margin: 20px 0;
+}
+#inicio > a {
+  background: green;
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+}
+#projetos {
+  background: lightblue;
+}
+#projetos main {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+#projetos article {
+  background: white;
+  padding: 20px;
+}
+#cadeira {
+  background: lightgreen;
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+#cadeira article {
+  width: 50%;
+}
+#cadeira ul {
+  margin: 20px;
+}
+#cadeira img {
+  width: 300px;
+}
+@media (max-width: 600px) {
+  section {padding: 20px;}
+  #inicio h1 {font-size: 35px;}
+  #projetos main {flex-direction: column;}
+  #cadeira {flex-direction: column;}
+  #cadeira article {width: 100%;}
+}

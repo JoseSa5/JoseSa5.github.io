@@ -1,38 +1,62 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>José Sá</title>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header>
-      <h1>Primeira página Web</h1>
-      <img src="images/foto1.jpg" alt="Ponte de Lima" />
-    </header>
-    <main>
-      <p>Eis a minha primeira página Web!</p>
-      <p>
-        Na unidade curricular de
-        <a href="https://moodle.ensinolusofona.pt/course/view.php?id=27320">
-          Desenvolvimento de Interfaces Web
-        </a>
-        abordaremos as seguintes tecnologias Web &#127760;:
-      </p>
-      <ul>
-        <li>HTML</li>
-        <li>CSS</li>
-        <li>JavaScript</li>
-        <li>React e Next.js</li>
-      </ul>
-      <p>Iremos criar soluções criativas!</p>
+    <section id="inicio">
+      <nav>
+        <ul>
+          <li><a href="#inicio">Início</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#cadeira">Interfaces Web</a></li>
+          <li><a href="tutoriais.html">Tutoriais</a></li>
+        </ul>
+      </nav>
+      <h1>José Sá</h1>
+      <p>Bem-vindo à minha página de Desenvolvimento de Interfaces Web.</p>
+      <a href="#projetos">Ver projetos</a>
+    </section>
+    <section id="projetos">
+      <h2>Projetos / Labs</h2>
+      <p>Projetos desenvolvidos ao longo da UC.</p>
+      <main>
+        <article>
+          <h3>Lab 1</h3>
+          <p>Primeiro laboratório.</p>
+          <a href="lab1/index.html">Ver Lab 1</a>
+        </article>
+        <article>
+          <h3>Lab 2</h3>
+          <p>Segundo laboratório.</p>
+          <a href="lab2/index.html">Ver Lab 2</a>
+        </article>
+        <article>
+          <h3>Lab 3</h3>
+          <p>Terceiro laboratório.</p>
+          <a href="lab3/index.html">Ver Lab 3</a>
+        </article>
+      </main>
+    </section>
+    <section id="cadeira">
+      <article>
+        <h2>Desenvolvimento de Interfaces Web</h2>
+        <p>
+          Na unidade curricular de Desenvolvimento de Interfaces Web abordaremos
+          as seguintes tecnologias Web:
+        </p>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>React e Next.js</li>
+        </ul>
+        <p>Iremos criar soluções criativas!</p>
+      </article>
       <img src="images/diw.svg" alt="Desenvolvimento de Interfaces Web" />
-      <p><a href="lab1/index.html">Lab1</a></p>
-      <p><a href="lab2/index.html">Lab2</a></p>
-    </main>
-    <footer>
-      <p>Universidade Lusófona 2025</p>
-    </footer>
+    </section>
   </body>
 </html>

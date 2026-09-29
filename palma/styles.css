@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "main aside"
+    "footer footer";
+  grid-template-columns: 2fr 1fr;
+  padding: 10px;
+}
+header {
+  grid-area: header;
+  background: teal;
+  padding: 20px;
+}
+main {
+  grid-area: main;
+  background: red;
+  padding: 10px;
+}
+aside {
+  grid-area: aside;
+  background: limegreen;
+  padding: 15px;
+}
+article {
+  background: lightcoral;
+  border: 1px solid black;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+footer {
+  grid-area: footer;
+  background: yellowgreen;
+  padding: 15px;
+}
