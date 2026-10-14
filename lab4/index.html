@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 4</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lab 4 - Eventos JavaScript</h1>
+      <p>Experimenta os diferentes eventos do rato.</p>
+    </header>
+
+    <main>
+      <section>
+        <h2 onmouseover="passarRato()" onmouseout="sairRato()">
+          1. Passa por aqui!
+        </h2>
+      </section>
+
+      <section>
+        <h2 id="textoCor">2. Pinta-me!</h2>
+        <button onclick="pintar('red')">Red</button>
+        <button onclick="pintar('green')">Green</button>
+        <button onclick="pintar('blue')">Blue</button>
+      </section>
+
+      <section>
+        <h2>3. Faz duplo clique na fotografia</h2>
+        <p id="textoImagem">A imagem está no tamanho normal.</p>
+
+        <img
+          src="images/fotografia.jpg"
+          alt="Ponte de Lima"
+          ondblclick="mudarImagem()"
+        />
+      </section>
+
+      <section id="zonaRato" onmousemove="mexerRato()">
+        <h2>4. Move o rato nesta zona</h2>
+        <p id="movimentos">Movimentos: 0</p>
+      </section>
+
+      <section>
+        <h2>5. Escolhe uma cor em inglês</h2>
+
+        <input
+          id="corEscolhida"
+          type="text"
+          placeholder="Ex: red, blue, green"
+        />
+        <button onclick="aplicarCor()">Submeter</button>
+
+        <p id="textoEscolhido">Este texto vai mudar de cor.</p>
+      </section>
+
+      <section>
+        <h2>6. Contador</h2>
+        <button onclick="contar()">Conta!</button>
+        <span id="contador">0</span>
+      </section>
+    </main>
+
+    <footer>
+      <p>Desenvolvimento de Interfaces Web - Lab 4</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

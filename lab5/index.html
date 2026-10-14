@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lab 5</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Lab 5 - JavaScript</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2 onmouseover="passarRato()" onmouseout="sairRato()">
+          1. Passa por aqui!
+        </h2>
+      </section>
+
+      <section>
+        <h2 id="textoCor">2. Pinta-me!</h2>
+        <button class="color" data-color="purple">Purple</button>
+        <button class="color" data-color="orange">Orange</button>
+        <button class="color" data-color="pink">Pink</button>
+      </section>
+
+      <section>
+        <h2>3. Experimenta escrever...</h2>
+        <input
+          id="caixaTexto"
+          type="text"
+          onkeydown="mudarCorCaixa()"
+          placeholder="Escreve aqui"
+        />
+      </section>
+
+      <section>
+        <h2>4. Escolha uma cor:</h2>
+
+        <select onchange="mudarFundo(this)">
+          <option value="white">White</option>
+          <option value="red">Red</option>
+          <option value="blue">Blue</option>
+        </select>
+      </section>
+
+      <section>
+        <h2>5. Contador com Local Storage</h2>
+
+        <button id="incrementar">Incrementar</button>
+        <button id="decrementar">Decrementar</button>
+        <button id="reset">Reset</button>
+
+        <span id="contador">0</span>
+      </section>
+
+      <section>
+        <h2>6. Dados pessoais</h2>
+
+        <form id="formulario">
+          <input id="nome" type="text" placeholder="Insira o seu nome" />
+          <input id="idade" type="number" placeholder="Insira a sua idade" />
+          <input type="submit" value="Submit" />
+        </form>
+
+        <p id="mensagem"></p>
+      </section>
+
+      <section>
+        <h2>
+          7. Automatic Counter:
+          <span id="contadorAutomatico">0</span>
+        </h2>
+      </section>
+
+      <section>
+        <h2>8. Flex Direction</h2>
+
+        <select onchange="mudarDirecao(this)">
+          <option value="row">row</option>
+          <option value="row-reverse">row-reverse</option>
+          <option value="column">column</option>
+          <option value="column-reverse">column-reverse</option>
+        </select>
+
+        <div id="container">
+          <span class="bola"></span>
+          <span class="bola"></span>
+          <span class="bola"></span>
+          <span class="bola"></span>
+        </div>
+      </section>
+
+      <section>
+        <h2>Fotografia</h2>
+        <p id="textoImagem">Faz duplo clique na fotografia.</p>
+
+        <img
+          src="images/fotografia.jpg"
+          alt="Ponte de Lima"
+          ondblclick="mudarImagem()"
+        />
+      </section>
+
+      <section id="zonaRato" onmousemove="mexerRato()">
+        <h2>Move o rato nesta zona</h2>
+        <p id="movimentos">Movimentos: 0</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>Desenvolvimento de Interfaces Web - Lab 5</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

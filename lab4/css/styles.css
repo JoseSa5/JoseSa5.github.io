@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #eeeeee;
+  font-family: Arial;
+}
+
+header {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+header h1 {
+  margin-bottom: 10px;
+}
+
+main {
+  width: 80%;
+  max-width: 900px;
+  margin: 30px auto;
+}
+
+section {
+  background-color: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+h2 {
+  color: darkgreen;
+}
+
+button {
+  background-color: green;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 18px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: darkgreen;
+}
+
+input {
+  padding: 10px;
+  width: 250px;
+  font-size: 16px;
+}
+
+img {
+  width: 550px;
+  max-width: 100%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+#zonaRato {
+  background-color: lightblue;
+}
+
+#contador {
+  font-size: 28px;
+  font-weight: bold;
+  margin-left: 10px;
+}
+
+#textoEscolhido {
+  font-size: 20px;
+  margin-top: 20px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
