@@ -1,0 +1,57 @@
+body {
+  font-family: Arial;
+  background-color: #eeeeee;
+  margin: 0;
+}
+
+header {
+  background-color: green;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+main {
+  background-color: white;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 800px;
+}
+
+section {
+  border: 1px solid grey;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  padding: 10px;
+}
+
+input[type="submit"] {
+  background-color: green;
+  color: white;
+  border: 0;
+}
+
+li {
+  margin: 10px;
+}
+
+button {
+  margin-left: 10px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
