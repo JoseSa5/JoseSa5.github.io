@@ -66,3 +66,6 @@ header + img {
   display: block;
   margin: 20px auto;
 }
+footer a {
+  color: white;
+}

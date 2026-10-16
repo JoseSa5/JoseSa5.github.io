@@ -165,3 +165,6 @@ header + img {
   .curiosidades {grid-column: 1;}
   .info-img2 {grid-column: 1;}
 }
+footer a {
+  color: white;
+}
