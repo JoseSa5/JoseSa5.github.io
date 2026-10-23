@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background-color: whitesmoke;
+}
+
+header {
+  background-color: purple;
+  color: white;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  background-color: whitesmoke;
+}
+
+section {
+  padding: 40px;
+  min-height: 100vh;
+}
+
+section > h2 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#produtos > div,
+#cesto > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+article {
+  background-color: white;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+article img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+article p {
+  text-align: left;
+}
+
+article button {
+  padding: 8px 15px;
+}
+
+#cesto {
+  background-color: purple;
+  color: white;
+}
+
+#cesto article {
+  color: black;
+}
+
+#cesto h3 {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 40px;
+}
+
+footer {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+footer a {
+  color: white;
+}
+
+@media (max-width: 600px) {
+  header {flex-direction: column;}
+  section {padding: 20px;}
+  article {width: 100%;}
+}
